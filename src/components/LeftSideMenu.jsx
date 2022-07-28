@@ -22,7 +22,7 @@ import { IoGameControllerOutline } from 'react-icons/io5';
 import youtubeLogo from '../imgs/logo.png';
 const LeftSideMenu = () => {
   return (
-    <div className='sticky top-0  flex-[1] lg:flex-[1.2] h-screen max-h-screen overflow-y-visible text-white bg-sidebarmenu'>
+    <div className=' transition-all duration-150 sticky left-0 top-0  flex-[1] lg:flex-[1.2] h-screen max-h-screen overflow-y-visible text-white bg-sidebarmenu'>
       <div className='overflow-y-visible'>
         <div className='flex space-x-2  p-3 pb-0 px-7 cursor-pointer items-center justify-start'>
           <img src={youtubeLogo} className='h-7' alt='Youtube logo' />{' '}
