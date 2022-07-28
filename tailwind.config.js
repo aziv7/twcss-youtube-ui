@@ -10,6 +10,11 @@ module.exports = {
         mainColorLight: '#f9f9f9',
         sidebarmenuLight: 'white',
       },
+      screen: {
+        xl: '1280px',
+        '2xl': '1350px',
+        xxl: '1500px',
+      },
     },
   },
   plugins: [],

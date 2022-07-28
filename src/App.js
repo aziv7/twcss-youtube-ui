@@ -8,18 +8,19 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
   return (
     <div className='flex flex-row'>
-      <LeftSideMenu />
-      <div className='flex-[7] bg-mainColor'>
-        <Navbar />
-        <div>
-          <BrowserRouter>
+      <BrowserRouter>
+        {' '}
+        <LeftSideMenu />
+        <div className='flex-[7] bg-mainColor'>
+          <Navbar />
+          <div>
             <Routes>
-              <Route path='/' element={Home} />
-              <Route path='/video/:id' element={Video} />
+              <Route path='/' element={<Home />} />
+              <Route path='/video/:id' element={<Video />} />
             </Routes>
-          </BrowserRouter>
+          </div>
         </div>
-      </div>
+      </BrowserRouter>
     </div>
   );
 }
