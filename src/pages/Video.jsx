@@ -58,7 +58,7 @@ const Video = () => {
             <div className='w-[95%]'>
               <h1 className='text-md text-white font-medium'>Nelly Furtado</h1>
               <p className='text-gray-400'>2 M subscribers</p>
-              <p className='text-white w-full  mt-8'>
+              <p className='text-white w-full  mt-5'>
                 REMASTERED IN HD! Music video by Nelly Furtado performing Say It
                 Right. (C) 2006 Geffen Records #NellyFurtado #SayItRight
                 #Remastered #Pop #OfficialMusicVideo
@@ -66,7 +66,7 @@ const Video = () => {
             </div>
           </div>
           <div>
-            <button className='bg-[#f00]  py-2 px-4 text-white font-medium'>
+            <button className='bg-[#f00] rounded-sm border-none py-2 px-4 text-white font-medium'>
               Subscribe
             </button>
           </div>
