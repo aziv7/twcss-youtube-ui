@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   MdOutlineExplore,
   MdLiveTv,
@@ -24,14 +25,19 @@ const LeftSideMenu = () => {
   return (
     <div className=' transition-all duration-150 sticky left-0 top-0  flex-[1] lg:flex-[1.2] h-screen max-h-screen overflow-y-visible text-white bg-sidebarmenu'>
       <div className='overflow-y-visible'>
-        <div className='flex space-x-2  p-3 pb-0 px-7 cursor-pointer items-center justify-start'>
-          <img src={youtubeLogo} className='h-7' alt='Youtube logo' />{' '}
-          <h1 className='font-bold text-lg'>Youtube</h1>
-        </div>
-        <div className='py-[8px] px-[26px]  flex flex-col'>
-          <div className='flex cursor-pointer items-center space-x-4 rounded-sm hover:bg-gray-800 px-1 py-2'>
-            <AiFillHome /> <span>Home</span>
+        <Link to={'/'}>
+          <div className='flex space-x-2  p-3 pb-0 px-7 cursor-pointer items-center justify-start'>
+            <img src={youtubeLogo} className='h-7' alt='Youtube logo' />{' '}
+            <h1 className='font-bold text-lg'>Youtube</h1>
           </div>
+        </Link>
+        <div className='py-[8px] px-[26px]  flex flex-col'>
+          <Link to={'/'}>
+            {' '}
+            <div className='flex cursor-pointer items-center space-x-4 rounded-sm hover:bg-gray-800 px-1 py-2'>
+              <AiFillHome /> <span>Home</span>
+            </div>
+          </Link>
           <div className='flex cursor-pointer items-center space-x-4 rounded-sm hover:bg-gray-800 px-1 py-2'>
             <MdOutlineExplore /> <span>Explore</span>
           </div>
