@@ -4,6 +4,8 @@ import { AiOutlineSave } from 'react-icons/ai';
 
 import { BiLike, BiDislike } from 'react-icons/bi';
 import { IoIosShareAlt } from 'react-icons/io';
+import { Card } from '../components';
+import Comments from '../components/Comments';
 const Video = () => {
   return (
     <div className='flex text-white'>
@@ -71,9 +73,18 @@ const Video = () => {
             </button>
           </div>
         </div>
+        <hr className='border border-borderColor my-3' />
+        <Comments />
       </div>
-      <div className='hidden md:inline md:flex-[2]  text-white'>
-        recomendation
+      <div className='hidden p-5 lg:inline lg:flex-[2] lg:flex-col lg:w-full text-white'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     </div>
   );
