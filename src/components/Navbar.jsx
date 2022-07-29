@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
-
+import { Link } from 'react-router-dom';
 import { MdAccountCircle } from 'react-icons/md';
 const Navbar = () => {
   return (
@@ -18,9 +18,12 @@ const Navbar = () => {
           />{' '}
         </div>
 
-        <button className='bg-transparent flex items-center justify-center space-x-2 border-solid border rounded-sm text-buttonborder  border-buttonborder text-sm font-medium  px-2 py-1'>
-          <MdAccountCircle /> <span>Sign in</span>
-        </button>
+        <Link to='sign-in'>
+          {' '}
+          <button className='bg-transparent flex items-center justify-center space-x-2 border-solid border rounded-sm text-buttonborder  border-buttonborder text-sm font-medium  px-2 py-1'>
+            <MdAccountCircle /> <span>Sign in</span>
+          </button>
+        </Link>
       </div>
     </div>
   );

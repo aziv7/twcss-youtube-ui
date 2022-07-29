@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Video from './pages/Video';
 import Home from './pages/Home';
+import Login from './pages/Login';
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   return (
@@ -15,7 +16,7 @@ function App() {
           <Navbar />
           <div>
             <Routes>
-              {' '}
+              <Route path='/sign-in' element={<Login />} />
               <Route path='/video/:id' element={<Video />} />
               <Route path='/' element={<Home />} />
             </Routes>

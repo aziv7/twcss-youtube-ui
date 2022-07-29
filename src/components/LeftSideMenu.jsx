@@ -57,9 +57,12 @@ const LeftSideMenu = () => {
             <p className='text-sm'>
               Sign in to like videos, comment and subscribe.
             </p>
-            <button className='bg-transparent flex items-center justify-center space-x-2 border-solid border rounded-sm text-buttonborder  border-buttonborder text-sm font-medium  px-2 py-1'>
-              <MdAccountCircle /> <span>Sign in</span>
-            </button>
+            <Link to={'sign-in'}>
+              {' '}
+              <button className='bg-transparent flex items-center justify-center space-x-2 border-solid border rounded-sm text-buttonborder  border-buttonborder text-sm font-medium  px-2 py-1'>
+                <MdAccountCircle /> <span>Sign in</span>
+              </button>
+            </Link>
           </div>
 
           <div className='flex cursor-pointer items-center space-x-4 rounded-sm hover:bg-gray-800 px-1 py-2'>
