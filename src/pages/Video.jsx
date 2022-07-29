@@ -23,8 +23,10 @@ const Video = () => {
         <h1 className='font-normal text-lg text-white mt-5 mb-2'>
           Nelly Furtado - Say It Right (Official Music Video)
         </h1>
-        <div className='flex flex-row justify-between items-center'>
-          <p className='text-gray-400 '>759 042 439 . vues16 juin 2009</p>
+        <div className='flex flex-col items-start lg:flex-row    lg:justify-between lg:items-center'>
+          <div>
+            <p className='text-gray-400 '>759 042 439 . vues16 juin 2009</p>
+          </div>
           <div className='flex space-x-3 '>
             <button className='flex items-center justify-center space-x-1'>
               <BiLike /> <span>2 K</span>
