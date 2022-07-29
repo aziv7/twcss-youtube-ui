@@ -11,12 +11,13 @@ function App() {
       <BrowserRouter>
         {' '}
         <LeftSideMenu />
-        <div className='flex-[7] bg-mainColor'>
+        <div className='flex-[7] flex-col bg-mainColor'>
           <Navbar />
           <div>
             <Routes>
-              <Route path='/' element={<Home />} />
+              {' '}
               <Route path='/video/:id' element={<Video />} />
+              <Route path='/' element={<Home />} />
             </Routes>
           </div>
         </div>
